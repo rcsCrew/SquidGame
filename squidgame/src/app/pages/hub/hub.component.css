@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     background: rgb(25, 25, 35);
-    width: 20%;
+    width: 450px;
     padding: 20px;
     box-sizing: border-box;
 }
