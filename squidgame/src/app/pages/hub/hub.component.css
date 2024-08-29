@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(25, 25, 35);
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box1 {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    background: #333;
+    padding: 10px;
+}
+
+.box1 p {
+    color: white;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.grid2,
+.grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.grid2 input[type="checkbox"],
+.grid1 input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    /* Define o tamanho do checkbox */
+    height: 20px;
+    /* Define o tamanho do checkbox */
+    /* Remove a borda padrão do checkbox */
+    appearance: none;
+    /* Estiliza o checkbox com um fundo transparente por padrão */
+    background-color: rgb(28, 28, 28);
+}
+
+
+/* Estilo dos checkboxes quando marcados */
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(255, 255, 255);
+    /* Cor do checkmark */
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* Customizando o aspecto do checkbox para grid1 quando marcado */
+
+.grid1 input[type="checkbox"]:checked {
+    background-color: green;
+    /* Cor de fundo do checkbox quando marcado */
+}
+
+.grid1 input[type="checkbox"]::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 4px;
+    /* Bordas arredondadas */
+}
+
+
+/* Customizando o aspecto do checkbox para grid2 quando marcado */
+
+.grid2 input[type="checkbox"]:checked {
+    background-color: rgb(255, 5, 192);
+    /* Cor de fundo do checkbox quando marcado */
+}
+
+.grid2 input[type="checkbox"]::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 4px;
+    /* Bordas arredondadas */
+}
